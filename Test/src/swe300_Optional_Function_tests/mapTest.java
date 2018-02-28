@@ -39,6 +39,10 @@ public class mapTest
 		
 		System.out.println(mapf(localHuman::getWeapon).apply(oh));
 		System.out.println(map(localHuman::getWeapon).apply(oh2));
+		
+		
+		
+		
 		//System.out.println(repeat(localHuman::oneArg).apply(oh, i));
 		System.out.println(map2(localHuman::oneArg).apply(oh, j));
 		System.out.println(map2((localHuman h, Integer x) -> h.oneArg(x)).apply(oh, j));
