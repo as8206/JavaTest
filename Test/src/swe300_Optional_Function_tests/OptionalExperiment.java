@@ -38,4 +38,11 @@ class localHuman {
 	private Weapon w;
 	public localHuman(Weapon ww) {w=ww;}
 	public Weapon getWeapon() { return w; }
+	public int oneArg(int i) {return i *3;}
+}
+
+class demoClass {
+	public int oneArg(int i) {
+		return i * 3;
+	}
 }
