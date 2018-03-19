@@ -14,7 +14,7 @@ public class runner {
 		
 		List<Apple> a = new ArrayList<Apple>();
 		a.add(new Apple());
-		List<Fruit> f = a;
+		//List<Fruit> f = a;
 		
 		
 	}
