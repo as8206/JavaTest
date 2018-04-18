@@ -12,9 +12,16 @@ public class OptionalExperiment
 	public static void main(String[] args)
 	{
 		localHuman bob = new localHuman(new Weapon(new Magazine(10)));
-		Optional<localHuman> oh = Optional.of(new localHuman(new Weapon(new Magazine(15))));
+//		Optional<localHuman> oh = Optional.of(new localHuman(new Weapon(new Magazine(15))));
+		Optional<localHuman> oh = Optional.ofNullable(null);
 		System.out.println(ammoCheck(bob));
 	//	System.out.println(oh.map(ammoCheck));
+		
+		localHuman h = oh.get();
+		if(h != null)
+			System.out.println(h);
+		else
+			System.out.println("h is null.");
 		
 	}
 }
